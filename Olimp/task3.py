@@ -1,5 +1,9 @@
 def fib(n):
-    if n <=1:
-        return n
-    return fib(n-1)+fib(n-2)
-print(fib(7))
+    a=[0]*(n+1)
+    for i in range(1, n + 1):
+        if i <=1:
+            a[i]=i
+        else:
+            a[i]=a[i-1]+a[i-2]
+    return(a[n])
+print(fib(40))
